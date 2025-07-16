@@ -5,20 +5,14 @@
   "type": "module",
   "scripts": {
     "cargo": "cargo build --target=wasm32-unknown-emscripten --release",
-    "pack": "cp ./target/wasm32-unknown-emscripten/release/emlite-bind-example.js dist && webpack --mode=production",
+    "pack": "cp ./target/wasm32-unknown-emscripten/release/emlite-bind-example.js dist",
     "serve": "http-server ./dist"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "description": "",
-  "dependencies": {
-    "@bjorn3/browser_wasi_shim": "^0.4.2",
-    "emlite": "^0.1.26"
-  },
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "webpack": "^5.100.2",
-    "webpack-cli": "^6.0.1"
+    "http-server": "^14.1.1"
   }
 }

@@ -1,4 +1,3 @@
 /target
 node_modules
-/dist/main.js
-/dist/*.wasm
+/dist/emlite-bind-example.js

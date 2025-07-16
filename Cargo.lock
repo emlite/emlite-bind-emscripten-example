@@ -10,9 +10,9 @@ checksum = "8fd5de2a10e31b3ec3e8d75e7ccf8281ab3ee55de68f7ab6ffa9e21be8d82f22"
 
 [[package]]
 name = "emlite"
-version = "0.1.29"
+version = "0.1.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3eec414046cc8af528508f19196143c8f018b1a0ba163a30005059fe51499c0c"
+checksum = "f02b67764615936454d6341f3e70b7d8961c273114cde6fc297b670e22ea00b8"
 dependencies = [
  "cmk",
 ]
