@@ -1,0 +1,8 @@
+[package]
+name = "emlite-bind-example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+jsbind = "0.1.9"
+webbind = "0.1.9"
