@@ -27,7 +27,8 @@ fn main() {
     button.add_event_listener0(
         "click",
         &Closure::bind1(move |p: PointerEvent| {
-            con.log(&[p.client_x().into()]);
+            let s = format!("You clicked at {}, {}", p.client_x(), p.client_y());
+            con.log(&[s.into()]);
         }).into()
     );
     body.append_child(button.dyn_ref::<Node>().unwrap());
