@@ -5,6 +5,7 @@ use webbind::pointer_event::PointerEvent;
 use webbind::window;
 
 fn main() {
+    println!("Click the button");
     let con = Console::get();
     let document = window().document();
     let bodies = document.get_elements_by_tag_name(&"body".into());
