@@ -4,5 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-jsbind = "0.1.14"
-webbind = "0.1.14"
+jsbind = "0.1.21"
+webbind = "0.1.21"
