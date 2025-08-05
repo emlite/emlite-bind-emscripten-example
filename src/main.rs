@@ -5,6 +5,7 @@ use webbind::pointer_event::PointerEvent;
 use webbind::window;
 
 fn main() {
+    emlite::init();
     println!("Click the button");
     let con = Console::get();
     let document = window().document();
