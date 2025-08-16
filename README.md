@@ -15,7 +15,7 @@ npm run serve # runs http-server on the dist directory
 
 Note that in our .cargo/config.toml, we use the following link flags:
 ```
-sERROR_ON_UNDEFINED_SYMBOLS=0 -sALLOW_MEMORY_GROWTH=1 -sEXPORTED_RUNTIME_METHODS=wasmTable,UTF8ToString,lengthBytesUTF8,stringToUTF8 -sEXPORTED_FUNCTIONS=_malloc,_main -Wl,--strip-all -sSINGLE_FILE
+sERROR_ON_UNDEFINED_SYMBOLS=0 -sALLOW_MEMORY_GROWTH=1 -sEXPORTED_FUNCTIONS=_main -Wl,--strip-all,--export-dynamic -sSINGLE_FILE
 ```
 
 The SINGLE_FILE directive just bundles the wasm inside the emscripten-generated js file. Otherwise, you would need to copy both files to dist.
