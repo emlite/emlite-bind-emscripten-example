@@ -24,10 +24,10 @@ fn main() {
     button.add_event_listener(
         // or &JsString::from("click"),
         &"click".into(),
-        &Closure::bind1(move |p: PointerEvent| {
-            con.log(&[p.client_x().into()]);
-        })
-        .into(),
+        &EventListener::from_closure(move |p: Event| {
+            con.log(&[p.dyn_into::<PointerEvent>().unwrap().client_x().into()]);
+            Undefined::VALUE
+        }),
     );
     body.append_child(button.dyn_ref::<Node>().unwrap());
 }
