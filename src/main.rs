@@ -2,6 +2,7 @@ use jsbind::prelude::*;
 use webbind::*;
 
 fn main() {
+    emlite::init();
     let con = Console::get();
     let document = window().document();
     let bodies = document.get_elements_by_tag_name(&"body".into());
